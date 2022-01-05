@@ -56,7 +56,7 @@ streamlit run Chinese-Poetry-Library.py
 
 ### 创建supervisor进程配置文件
 vim /etc/supervisor/conf.d/supervisor_chinesepoetry.conf
-    """
+	"""
     [program:Chinese-Poetry]
     command=/xxx/xxx/bin/streamlit run /xxx/xxx/Chinese-Poetry-Library.py --server.port 11118
     autostart=true
@@ -67,7 +67,7 @@ vim /etc/supervisor/conf.d/supervisor_chinesepoetry.conf
     stderr_logfile=/xxx/xxx/logs/ChinesePoetry_supervisor.stderr.log
     stdout_logfile_maxbytes=20MB
     stdout_logfile_backups=5
-		"""
+	"""
 
 ### 加载配置
 sudo supervisorctl update
